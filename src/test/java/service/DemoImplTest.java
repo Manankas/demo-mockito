@@ -25,6 +25,7 @@ public class DemoImplTest {
 
         /*  on va verifier que la methode DemoUtil.demoStaticMethod(1)
         *   ne sera appeler qu'une seule fois
+         *
         * */
         PowerMockito.verifyStatic(Mockito.times(1));
         DemoUtil.demoStaticMethod(1);
